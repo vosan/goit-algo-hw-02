@@ -2,6 +2,12 @@ from collections import deque
 
 
 def is_palindrome(word: str) -> bool:
+    """
+    Check if a given word is a palindrome.
+
+    :param word: The word to be checked for being a palindrome
+    :return: True if the word is a palindrome, False otherwise
+    """
     dq = deque()
     for char in word:
         dq.append(char)
